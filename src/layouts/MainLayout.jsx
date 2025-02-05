@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "../components/Header";
+import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
 import About from "../Components/About";  // Import About component
 import Products from "../pages/Products";
 import Profile from "../pages/Profile";
-import Footer from "../components/Footer";
-import Features from "../components/Features";
+import Footer from "../Components/Footer";
+import Features from "../Components/Features";
 
 const MainLayout = ({ user }) => {
   return (
