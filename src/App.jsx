@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { onAuthStateChanged, auth } from "./utils/firebase";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
-import SignUp from "./components/Authentication/SignUp";
-import Login from "./components/Authentication/Login";
-import ForgetPassword from "./components/Authentication/ForgetPassword";
-import EmailVerification from "./components/Authentication/EmailVerification";
-import LoadingSpinner from "./components/LoadingSpinner";
+import SignUp from "./Components/Authentication/SignUp";
+import Login from "./Components/Authentication/Login";
+import ForgetPassword from "./Components/Authentication/ForgetPassword";
+import EmailVerification from "./Components/Authentication/EmailVerification";
+import LoadingSpinner from "./Components/LoadingSpinner";
 
 function App() {
   const [user, setUser] = useState(null);
