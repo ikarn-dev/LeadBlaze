@@ -33,7 +33,7 @@ const TypewriterText = ({ text, delay = 0 }) => {
 
 const HeroSection = () => {
   const handleGetStarted = () => {
-    window.open("/products", "_blank")
+    window.location.href = "/products"
   }
 
   const handleContactUs = () => {
@@ -100,4 +100,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection
-

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Flame, Twitter, Linkedin, Heart, Github } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,17 +25,29 @@ const Footer = () => {
               Transform your customer relationships with our intelligent CRM solutions.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
+              <a 
+                href="https://x.com/iKK6600" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/60 hover:text-orange-500 transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/karan-kumar-487a8a260/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/60 hover:text-orange-500 transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
-                <Mail className="h-5 w-5" />
+              <a 
+                href="https://github.com/ikarn-dev" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/60 hover:text-orange-500 transition-colors"
+              >
+                <Github className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -44,7 +56,7 @@ const Footer = () => {
           <div className="md:ml-auto">
             <h3 className="font-semibold mb-4 text-white">Product</h3>
             <ul className="space-y-3">
-              {['Features', 'Pricing', 'Integration', 'Documentation', 'Security'].map((item) => (
+              {['Features', 'Pricing', 'Integration'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
                     {item}
@@ -58,7 +70,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-white">Company</h3>
             <ul className="space-y-3">
-              {['About Us', 'Careers', 'Blog', 'Press', 'Partners'].map((item) => (
+              {['About Us', 'Blog'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
                     {item}
@@ -70,22 +82,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-white/60 text-sm">
-            © {currentYear} LeadBlaze. All rights reserved.
+        <div className="border-t border-white/10 pt-8 mt-8 flex justify-center items-center">
+          <div className="text-white/60 text-sm flex items-center gap-2">
+            © {currentYear} LeadBlaze. Made with <Heart className="h-4 w-4 text-orange-500 inline" /> by Karan
           </div>
-          
-          <nav className="flex flex-wrap gap-6 text-sm">
-            {['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-white/60 hover:text-orange-500 transition-colors"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
         </div>
       </div>
     </footer>
