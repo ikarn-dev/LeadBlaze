@@ -1,5 +1,6 @@
 import React from "react"
 import { ChevronRight, Sparkles, Mail } from "lucide-react"
+import { useNavigate } from 'react-router-dom'
 
 const TypewriterText = ({ text, delay = 0 }) => {
   const [displayText, setDisplayText] = React.useState("")
@@ -32,8 +33,10 @@ const TypewriterText = ({ text, delay = 0 }) => {
 }
 
 const HeroSection = () => {
+  const navigate = useNavigate()
+
   const handleGetStarted = () => {
-    window.location.href = "/products"
+    navigate('/products')  // Make sure this matches your route path
   }
 
   const handleContactUs = () => {
